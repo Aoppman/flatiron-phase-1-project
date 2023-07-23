@@ -1,0 +1,52 @@
+{
+    "veganMeals": [
+        {
+            "id": 1,
+            "class": "breakfast",
+            "type": "pancakes",
+            "name": "Spelt Flour Pancakes",
+            "image": "",
+            "srcLink": "https://www.thesimplegreen.com"
+        },
+        {
+            "id": 2,
+            "class": "breakfast",
+            "type": "eggs",
+            "name": "Chickpea Flour Scrambled Eggs",
+            "image": "",
+            "srcLink": "https://sweetsimplevegan.com"
+        },
+        {
+            "id": 3,
+            "class": "lunch",
+            "type": "chick/'n",
+            "name": "Oyster Mushroom Fried Chicken",
+            "image": "",
+            "srcLink": "https://cookingwithayeh.com" 
+        },
+        {
+            "id": 4,
+            "class": "lunch",
+            "type": "burger",
+            "name": "Black Bean Burger",
+            "image": "",
+            "srcLink": "https://www.allrecipes.com" 
+        },
+        {
+            "id": 5,
+            "class": "dinner",
+            "type": "tacos",
+            "name": "Walnut & Mushroom Tacos",
+            "image": "",
+            "srcLink": "https://www.vegkitchen.com"
+        },
+        {
+            "id": 6,
+            "class": "dinner",
+            "type": "pulled phork",
+            "name": "Jackfruit Pulled Phork Sandwich",
+            "image": "",
+            "srcLink": "https://lovingitvegan.com"
+        }
+    ]
+}
