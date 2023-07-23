@@ -6,3 +6,6 @@ const chickn = [el("chick\'n-ingredients"), el("chick\'n-instructions")];
 const burger = [el("burger-ingredients"), el("burger-instructions")];
 const taco = [el("taco-ingredients"), el("taco-instructions")];
 const phork = [el("phork-ingredients"), el("phork-instructions")];
+
+const headerImg1 = el("try-vegan");
+const headerImg2 = el("mid-east-vegan");
