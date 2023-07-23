@@ -16,6 +16,20 @@
     <div>
         <h1>Would you try a vegan take on some of your everyday favorite foods?</h1>
     </div>
+
+    <form action="#">
+        <p><u>First, choose a meal category</u>  👉</p>
+        <label for="meal">Meal Category: </label>
+        <select id="meal">
+            <option value="breakfast">Breakfast</option>
+            <option value="lunch">Lunch</option>
+            <option value="dinner">Dinner</option>
+        </select>
+        <input type="submit" value="Submit">
+        <p id="then"><u>Then, click one of the staple meals generated</u></p>
+    </form>
+
+    <div class="breakfast" id="pancake">
     <!-- id:1 Pancake ingredients & instructions lists-->
     <ul class="breakfast" id="pancake-ingredients">
       <li>2 cups spelt flour (light or sprouted spelt flour will work)</li>
@@ -55,7 +69,8 @@
         side). Serve warm with fresh fruit and maple syrup.
       </li>
     </ol>
-
+    </div>
+    <div class="breakfast" id="egg">
     <!-- id:2 Egg ingredients & instructions lists-->
     <ul class="breakfast" id="egg-ingredients">
       <li>1/2 cup chickpea flour</li>
@@ -98,7 +113,8 @@
       </li>
       <li>Remove from heat, serve warm and enjoy!</li>
     </ol>
-
+    </div>
+    <div class="lunch" id="chick'n">
     <!-- id:3 Chick'n ingredients & instructions lists-->
     <ul class="lunch" id="chick'n-ingredients">
       <li>150 g oyster mushrooms</li>
@@ -149,7 +165,8 @@
         favourite dipping sauce or make a delicious vegan "chicken" sandwich
       </li>
     </ol>
-
+    </div>
+    <div class="lunch" id="burger">
     <!-- id:4 Burger ingredients & instructions lists-->
     <ul class="lunch" id="burger-ingredients">
       <li>1 (15 ounce) can black beans, drained and rinsed</li>
@@ -197,7 +214,8 @@
         outside, about 10 minutes per side.
       </li>
     </ol>
-
+    </div>
+    <div class="dinner" id="taco">
     <!-- id:5 Taco ingredients & instructions lists-->
     <ul class="dinner" id="taco-ingredients">
       <li>2 cups walnuts</li>
@@ -236,7 +254,8 @@
       </li>
       <li>Serve with your favorite taco toppings, and enjoy!</li>
     </ol>
-
+    </div>
+    <div class="dinner" id="phork">
     <!-- id:6 Pulled Phork ingredients & instructions lists-->
     <ul class="dinner" id="phork-ingredients">
       <li>
@@ -278,6 +297,7 @@
         more vegan BBQ sauce on the jackfruit once it's on the bun.
       </li>
     </ol>
+    </div>
     <script type="text/javascript" src="index.js"></script>
   </body>
 </html>
