@@ -28,6 +28,7 @@ function selectMeal() {
             alert("Please select a meal category!");
             return false;
     }
+    submit()
 }
 
 submitBtn.addEventListener('click', selectMeal);
@@ -39,5 +40,23 @@ function submit() {
 
 fetch(API)
 .then((resp) => resp.json())
-.then((data) => console.log(data));
+.then(renderMeals);
 
+function renderMeals(mealList) {
+console.log(mealList);
+
+
+const mealCards = mealList.forEach((meal) => {
+    const card = document.createElement('div');
+    card.classList.add("card");
+
+    const h2 = document.createElement('h2');
+    h2.textContent = meal.name;
+
+    const img = document.createElement('img')
+    img.classList.add("meal-image")
+    img.src = meal.image;
+
+    
+});
+}
