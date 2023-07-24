@@ -5,7 +5,7 @@
             "class": "breakfast",
             "type": "pancakes",
             "name": "Spelt Flour Pancakes",
-            "image": "",
+            "image": "/Users/dru_opp/Documents/Class snips/Phase-1 project images/Spelt pancakes.jpeg",
             "srcLink": "https://www.thesimplegreen.com"
         },
         {
@@ -13,7 +13,7 @@
             "class": "breakfast",
             "type": "eggs",
             "name": "Chickpea Flour Scrambled Eggs",
-            "image": "",
+            "image": "/Users/dru_opp/Documents/Class snips/Phase-1 project images/Chickpea scrambled eggs.jpeg",
             "srcLink": "https://sweetsimplevegan.com"
         },
         {
@@ -21,7 +21,7 @@
             "class": "lunch",
             "type": "chick/'n",
             "name": "Oyster Mushroom Fried Chicken",
-            "image": "",
+            "image": "/Users/dru_opp/Documents/Class snips/Phase-1 project images/Fried-Oyster-Mushrooms-Vegan-Fried-Chicken-01.jpg",
             "srcLink": "https://cookingwithayeh.com" 
         },
         {
@@ -29,7 +29,7 @@
             "class": "lunch",
             "type": "burger",
             "name": "Black Bean Burger",
-            "image": "",
+            "image": "/Users/dru_opp/Documents/Class snips/Phase-1 project images/black bean burger.jpeg",
             "srcLink": "https://www.allrecipes.com" 
         },
         {
@@ -37,7 +37,7 @@
             "class": "dinner",
             "type": "tacos",
             "name": "Walnut & Mushroom Tacos",
-            "image": "",
+            "image": "/Users/dru_opp/Documents/Class snips/Phase-1 project images/vegan-walnut-taco-meat-19-of-20.jpg",
             "srcLink": "https://www.vegkitchen.com"
         },
         {
@@ -45,7 +45,7 @@
             "class": "dinner",
             "type": "pulled phork",
             "name": "Jackfruit Pulled Phork Sandwich",
-            "image": "",
+            "image": "/Users/dru_opp/Documents/Class snips/Phase-1 project images/Jackfruit-Pulled-Pork-23.jpg",
             "srcLink": "https://lovingitvegan.com"
         }
     ]

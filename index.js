@@ -1,4 +1,5 @@
 const el = (id) => document.getElementById(id);
+const API = "http://localhost:3000/veganMeals";
 
 const pancakes = [el('pancake-ingredients'), el('pancake-instructions')];
 const eggs = [el('egg-ingredients'), el('egg-instructions')];
@@ -31,17 +32,12 @@ function selectMeal() {
 
 submitBtn.addEventListener('click', selectMeal);
 
+function submit() {
+    submitBtn.addEventListener('submit', )
+}
 
 
+fetch(API)
+.then((resp) => resp.json())
+.then((data) => console.log(data));
 
-
-
-
-
-
-
-
-
-
-
-const card = document.createElement('div');
