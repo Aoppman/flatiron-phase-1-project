@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    <!-- Title / stylesheet ref -->
   <head>
     <title>Try Vegan</title>
     <link rel="stylesheet" href="stylesheet.css" />
@@ -13,21 +14,27 @@
         src="/Users/dru_opp/Documents/Class snips/Phase-1 project images/Vegan-Middle-Eastern-Food_.jpeg"
         alt="middle-eastern-vegan-header"/>
     </div>
+    <!-- Header Div -->
     <div>
         <h1>Would you try a vegan take on some of your everyday favorite foods?</h1>
     </div>
-
+    <!-- submit form -->
     <form action="#">
         <p><u>First, choose a meal category</u>  👉</p>
         <label for="meal">Meal Category: </label>
         <select id="meal">
-            <option value="breakfast">Breakfast</option>
-            <option value="lunch">Lunch</option>
-            <option value="dinner">Dinner</option>
+            <option value=""blank>Make a Selection</option>
+            <option id="morning" value="breakfast">Breakfast</option>
+            <option id="noon" value="lunch">Lunch</option>
+            <option id="night" value="dinner">Dinner</option>
         </select>
-        <input type="submit" value="Submit">
+        <input id="submit" type="submit" value="Submit">
         <p id="then"><u>Then, click one of the staple meals generated</u></p>
     </form>
+
+    <div>
+
+    </div>
 
     <div class="breakfast" id="pancake">
     <!-- id:1 Pancake ingredients & instructions lists-->
