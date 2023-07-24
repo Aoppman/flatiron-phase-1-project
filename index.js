@@ -52,10 +52,16 @@ const mealCards = mealList.forEach((meal) => {
 
     const h2 = document.createElement('h2');
     h2.textContent = meal.name;
+    card.appendChild(h2);
 
     const img = document.createElement('img')
     img.classList.add("meal-image")
     img.src = meal.image;
+    card.appendChild(img);
+
+    const p = document.createElement('p')
+    p.textContent = meal.srcLink;
+    card.appendChild(p);
 
     
 });
