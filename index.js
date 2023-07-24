@@ -48,21 +48,25 @@ console.log(mealList);
 
 const mealCards = mealList.forEach((meal) => {
     const card = document.createElement('div');
-    card.classList.add("card");
+    card.classList.add("card", `${meal.class}`);
+
 
     const h2 = document.createElement('h2');
     h2.textContent = meal.name;
-    card.appendChild(h2);
+    
 
     const img = document.createElement('img')
     img.classList.add("meal-image")
     img.src = meal.image;
-    card.appendChild(img);
+    img.alt = `${meal.name}`;
 
     const p = document.createElement('p')
     p.textContent = meal.srcLink;
-    card.appendChild(p);
+    card.append(h2, img, p);
 
-    
+    console.log(card)
 });
 }
+
+const cardContainer = document.createElement('div');
+cardContainer.classList.add('container');
