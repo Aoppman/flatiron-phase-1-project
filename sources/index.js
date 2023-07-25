@@ -1,4 +1,5 @@
 const el = (id) => document.getElementById(id);
+
 const API = "http://localhost:3000/veganMeals";
 
 //addEventListener('DOMContentLoaded', !)
@@ -15,6 +16,8 @@ const selector = el("meal");
 const headerImg1 = el("try-vegan");
 const headerImg2 = el("mid-east-vegan");
 const submitBtn = el("submit");
+
+
 
 // Form functionality
 // meal category drop down selection and verification method
@@ -46,10 +49,13 @@ submitBtn.addEventListener('click', selectMeal);
 //});
 
 
-/*function displayMeals(selectMeal) {
-    if (selectedMeal === "breakfast")
-}
-*/
+/*function displayMeals(selectedMeal) {
+    if (selectedMeal === "breakfast") {
+        cardContainer.appendChild(card.card-breakfast)
+    } else if (selectedMeal ===)
+
+}*/
+
 // Fetches JSON data and calls renderMeals() on returned data
 fetch(API)
 .then((resp) => resp.json())
@@ -62,7 +68,7 @@ console.log(mealList);
 
 const mealCards = mealList.forEach((meal) => {
     const card = document.createElement('div');
-    card.classList.add(`${meal.class}`);
+    card.classList.add(`card-${meal.id}`);
 
     const h2 = document.createElement('h2');
     h2.textContent = meal.name;
@@ -76,7 +82,18 @@ const mealCards = mealList.forEach((meal) => {
     p.textContent = meal.srcLink;
     card.append(h2, img, p);
 
-    document.querySelector('#card-holder').append(card);
+    const cardContainer = document.querySelector('#card-holder').append(card);
+    console.log(card);
+
+   
+        const card1 = document.querySelector('.card-1');
+        const card2 = document.querySelector('.card-2');
+        const card3 = document.querySelector('.card-3');
+        const card4 = document.querySelector('.card-4');
+        const card5 = document.querySelector('.card-5');
+        const card6 = document.querySelector('.card-6');
+    
+   
 
 // appends uls / ols to cards containing associated/matching
 // JSON data (nested in renderMeals())
@@ -105,5 +122,5 @@ const mealCards = mealList.forEach((meal) => {
      };
     appendInfo(meal);
 });
-}
+};
 

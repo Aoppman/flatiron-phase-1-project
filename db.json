@@ -5,7 +5,7 @@
             "class": "breakfast",
             "type": "pancakes",
             "name": "Spelt Flour Pancakes",
-            "image": "/Users/dru_opp/Documents/Class snips/Phase-1 project images/Spelt pancakes.jpeg",
+            "image": "/Users/dru_opp/Development/code/phase-1/flatiron-phase-1-project/sources/images/Spelt pancakes.jpeg",
             "srcLink": "https://www.thesimplegreen.com"
         },
         {
@@ -13,7 +13,7 @@
             "class": "breakfast",
             "type": "eggs",
             "name": "Chickpea Flour Scrambled Eggs",
-            "image": "/Users/dru_opp/Documents/Class snips/Phase-1 project images/Chickpea scrambled eggs.jpeg",
+            "image": "/Users/dru_opp/Development/code/phase-1/flatiron-phase-1-project/sources/images/Chickpea scrambled eggs.jpeg",
             "srcLink": "https://sweetsimplevegan.com"
         },
         {
@@ -21,7 +21,7 @@
             "class": "lunch",
             "type": "chick/'n",
             "name": "Oyster Mushroom Fried Chicken",
-            "image": "/Users/dru_opp/Documents/Class snips/Phase-1 project images/Fried-Oyster-Mushrooms-Vegan-Fried-Chicken-01.jpeg",
+            "image": "/Users/dru_opp/Development/code/phase-1/flatiron-phase-1-project/sources/images/Fried-Oyster-Mushrooms-Vegan-Fried-Chicken-01.jpeg",
             "srcLink": "https://cookingwithayeh.com" 
         },
         {
@@ -29,7 +29,7 @@
             "class": "lunch",
             "type": "burger",
             "name": "Black Bean Burger",
-            "image": "/Users/dru_opp/Documents/Class snips/Phase-1 project images/black bean burger.jpeg",
+            "image": "/Users/dru_opp/Development/code/phase-1/flatiron-phase-1-project/sources/images/black bean burger.jpeg",
             "srcLink": "https://www.allrecipes.com" 
         },
         {
@@ -37,15 +37,15 @@
             "class": "dinner",
             "type": "tacos",
             "name": "Walnut & Mushroom Tacos",
-            "image": "/Users/dru_opp/Documents/Class snips/Phase-1 project images/vegan-walnut-taco-meat-19-of-20.jpg",
+            "image": "/Users/dru_opp/Development/code/phase-1/flatiron-phase-1-project/sources/images/vegan-walnut-taco-meat-19-of-20.jpg",
             "srcLink": "https://www.vegkitchen.com"
         },
         {
             "id": 6,
             "class": "dinner",
-            "type": "pulled phork",
+            "type": "phork",
             "name": "Jackfruit Pulled Phork Sandwich",
-            "image": "/Users/dru_opp/Documents/Class snips/Phase-1 project images/Jackfruit-Pulled-Pork-23.jpg",
+            "image": "/Users/dru_opp/Development/code/phase-1/flatiron-phase-1-project/sources/images/Jackfruit-Pulled-Pork-23.jpg",
             "srcLink": "https://lovingitvegan.com"
         }
     ]
