@@ -1,7 +1,10 @@
 const el = (id) => document.getElementById(id);
 const API = "http://localhost:3000/veganMeals";
 
-//Meal ingredients and instructions
+//addEventListener('DOMContentLoaded', !)
+
+
+//Meal ingredients and instructions (HTML uls & ols)
 const pancakes = [el('pancake-ingredients'), el('pancake-instructions')];
 const eggs = [el('egg-ingredients'), el('egg-instructions')];
 const chickn = [el("chick\'n-ingredients"), el("chick\'n-instructions")];   
@@ -14,6 +17,8 @@ const headerImg2 = el("mid-east-vegan");
 const submitBtn = el("submit");
 
 // Form functionality
+// meal category drop down selection and verification method
+// alerts with message when "submit" button clicked
 function selectMeal() {
     const selectedMeal = el("meal").value;
     switch (selectedMeal) {
@@ -30,32 +35,38 @@ function selectMeal() {
             alert("Please select a meal category!");
             return false;
     }
-    submit()
+   // displayMeals()
 }
-
+// calls fn ^^ on click of "submit" button
 submitBtn.addEventListener('click', selectMeal);
 
+//submitBtn.addEventListener('submit', (e) => { 
+  //  e.preventDefault
+
+//});
 
 
-
-
+/*function displayMeals(selectMeal) {
+    if (selectedMeal === "breakfast")
+}
+*/
+// Fetches JSON data and calls renderMeals() on returned data
 fetch(API)
 .then((resp) => resp.json())
 .then(renderMeals);
 
+// Initiated by fetch request and renders each JSON object
+// by creating HTML elements and rendering JSON data to them
 function renderMeals(mealList) {
 console.log(mealList);
-
 
 const mealCards = mealList.forEach((meal) => {
     const card = document.createElement('div');
     card.classList.add(`${meal.class}`);
 
-
     const h2 = document.createElement('h2');
     h2.textContent = meal.name;
     
-
     const img = document.createElement('img')
     img.classList.add("meal-image")
     img.src = meal.image;
@@ -67,7 +78,8 @@ const mealCards = mealList.forEach((meal) => {
 
     document.querySelector('#card-holder').append(card);
 
-//append ul / ol to cards
+// appends uls / ols to cards containing associated/matching
+// JSON data (nested in renderMeals())
     function appendInfo(meal){
         switch (meal.id) {
          case 1:

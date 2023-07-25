@@ -74,3 +74,33 @@ p {
     width: 410px;
     justify-content: flex-end;
 }
+
+div.breakfast {
+   
+    width: 700px;
+   
+
+}
+
+ul#pancake-ingredients, ol#pancake-instructions {
+   
+    
+    width: 500px;
+}
+
+img.meal-img {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+h2, img.meal-image {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div#card-holder {
+    display: flex;
+    flex-direction: row;
+}
