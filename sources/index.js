@@ -3,7 +3,7 @@ const el = (id) => document.getElementById(id);
 const API = "http://localhost:3000/veganMeals";
 
 // Meal ingredients and instructions (HTML uls & ols)
-const pancakes = [el("pancake-ingredients"), el("pancake-instructions")];
+const pancakes = [el("pancake-ingredients"), el("pancake-instructions")]
 const eggs = [el("egg-ingredients"), el("egg-instructions")];
 const chickn = [el("chick'n-ingredients"), el("chick'n-instructions")];
 const burger = [el("burger-ingredients"), el("burger-instructions")];
@@ -21,27 +21,15 @@ const form = el("click");
 // Form functionality
 // meal category drop down selection and verification method
 // alerts with message when "submit" button clicked
-function selectMeal() {
-  switch (selectedMeal) {
-    case "breakfast":
-      alert("You've selected Breakfast! Let's see what's cooking 👨‍🍳");
-      break;
-    case "lunch":
-      alert("You've selected Lunch! Let's see what's cooking 👨‍🍳");
-      break;
-    case "dinner":
-      alert("You've selected Dinner! Let's see what's cooking 👨‍🍳");
-      break;
-    default:
-      alert("Please select a meal category!");
-      return false;
-  }
-}
-
 
 let allMeals = [];
 
-
+function hidden(card) {
+    card.hidden = true;
+}
+function reveal(card) {
+    card.hidden = false;
+}
 
 // Fetches JSON data and calls renderMeals() on returned data
 fetch(API)
@@ -64,7 +52,9 @@ form.addEventListener("submit", (e) => {
   );
   renderAllMealCards(filteredMeals);
 
-  function selectMeal() {
+  function selectMeal() 
+  //let mealCard =document.querySelector("div#`card-${meal.id}`")
+  {
     switch (mealCategoryName) {
       case "breakfast":
         alert("You've selected Breakfast! Let's see what's cooking 👨‍🍳");
@@ -83,6 +73,9 @@ form.addEventListener("submit", (e) => {
   selectMeal(filteredMeals)
 });
 
+
+
+
 // Initiated by fetch request and renders each JSON object
 // by creating HTML elements and rendering JSON data to them
 function renderMealCard(meal) {
@@ -99,24 +92,28 @@ function renderMealCard(meal) {
   img.classList.add("meal-image");
   img.src = meal.image;
   img.alt = `${meal.name}`;
-
   // "meal recipe/src link" <p> element
   const p = document.createElement("p");
   p.textContent = meal.srcLink;
 
+
   // append to card
   card.append(h2, img, p);
-  //card.hidden = true;
+  hidden(card);
   // "Card container" <div> variable - and appends meal cards
-  const cardContainer = document
+  
+  /*document
     .querySelector("#card-holder")
-    .appendChild(card);
+    .appendChild(card);*/
 
   // appends uls / ols to cards containing associated/matching
   // JSON data (nested in renderMeals())
   function appendInfo(meal) {
     switch (meal.id) {
       case 1:
+        document
+    .querySelector("#card-holder")
+    .appendChild(card);
         return card.append(pancakes[0], pancakes[1]);
         break;
       case 2:
@@ -138,5 +135,5 @@ function renderMealCard(meal) {
         return false;
     }
   }
-  appendInfo(meal);
+  appendInfo(meal)
 }

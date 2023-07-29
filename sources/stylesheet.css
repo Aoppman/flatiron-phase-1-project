@@ -63,11 +63,12 @@ label {
 p {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
     width: 300px;
     font-style: italic;
     font-size: 22px;
+    text-align: center;
+    padding-left: 100px;
 }
 
 #then {
@@ -75,32 +76,29 @@ p {
     justify-content: flex-end;
 }
 
-div.breakfast {
-   
-    width: 700px;
-   
 
-}
 
-ul#pancake-ingredients, ol#pancake-instructions {
-   
-    
+ul, ol {
     width: 500px;
 }
 
-img.meal-img {
+img.meal-image {
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
+    align-items: center;
+    justify-content: center;
+    padding-left: 100px;
 }
 
-h2, img.meal-image {
+h2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 div#card-holder {
     display: flex;
     flex-direction: row;
+    justify-content: center;
 }
