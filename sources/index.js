@@ -16,20 +16,13 @@ const headerImg1 = el("try-vegan");
 const headerImg2 = el("mid-east-vegan");
 
 // Variable for HTML <select> element value (i.e. meal category)
-//const selectedMeal = el("meal").value;
+const selectedMeal = el("meal").value;
 const form = el("click");
-// Form functionality
-// meal category drop down selection and verification method
-// alerts with message when "submit" button clicked
+
+
 
 let allMeals = [];
 
-function hidden(card) {
-    card.hidden = true;
-}
-function reveal(card) {
-    card.hidden = false;
-}
 
 // Fetches JSON data and calls renderMeals() on returned data
 fetch(API)
@@ -43,7 +36,8 @@ function renderAllMealCards(meals) {
   document.querySelector("#card-holder").innerHTML = "";
   meals.forEach((meal) => renderMealCard(meal));
 }
-
+// Form functionality
+// meal category drop down selection and verification method
 form.addEventListener("submit", (e) => {
   e.preventDefault();
   let mealCategoryName = e.target[0].value;
@@ -51,10 +45,8 @@ form.addEventListener("submit", (e) => {
     (meal) => meal.class === mealCategoryName
   );
   renderAllMealCards(filteredMeals);
-
-  function selectMeal() 
-  //let mealCard =document.querySelector("div#`card-${meal.id}`")
-  {
+// alerts with message when "submit" button clicked
+  function selectMeal() {
     switch (mealCategoryName) {
       case "breakfast":
         alert("You've selected Breakfast! Let's see what's cooking 👨‍🍳");
@@ -72,8 +64,6 @@ form.addEventListener("submit", (e) => {
   }
   selectMeal(filteredMeals)
 });
-
-
 
 
 // Initiated by fetch request and renders each JSON object
@@ -94,27 +84,33 @@ function renderMealCard(meal) {
   img.alt = `${meal.name}`;
   // "meal recipe/src link" <p> element
   const p = document.createElement("p");
-  p.textContent = meal.srcLink;
+  p.classList.add('more')
+  p.textContent = "Still hungry? Find more meal ideas at..." 
+  const a = document.createElement("p");
+  a.innerHTML = `<a class="link" href=${meal.srcLink}>${meal.srcLink}</a>`
+  //p.appendChild(a);
 
 
   // append to card
-  card.append(h2, img, p);
-  hidden(card);
-  // "Card container" <div> variable - and appends meal cards
+  card.append(h2, img, p, a);
   
-  /*document
-    .querySelector("#card-holder")
-    .appendChild(card);*/
+  // "Card container" <div> variable - and appends meal cards
+  //function appendSelectedMealCards(meal) {
+
+  //meal.class === selectedMeal ? 
+  document.querySelector("#card-holder").appendChild(card) 
+  //: document.querySelector("#card-holder").innerHTML = "";
+    
+//}
+
+
 
   // appends uls / ols to cards containing associated/matching
   // JSON data (nested in renderMeals())
   function appendInfo(meal) {
     switch (meal.id) {
       case 1:
-        document
-    .querySelector("#card-holder")
-    .appendChild(card);
-        return card.append(pancakes[0], pancakes[1]);
+        return card.append(pancakes[0], pancakes[1])
         break;
       case 2:
         return card.append(eggs[0], eggs[1]);
@@ -136,4 +132,5 @@ function renderMealCard(meal) {
     }
   }
   appendInfo(meal)
+  //appendSelectedMealCards(meal)
 }

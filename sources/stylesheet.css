@@ -60,15 +60,52 @@ label {
     width: 170px; 
 }
 
-p {
+
+p.more {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
     width: 300px;
     font-style: italic;
-    font-size: 22px;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 70px;
+    
+}
+
+p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    padding-left: 20px;
+    
+}
+
+a.link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    font-style: italic;
+    font-size: 20px;
     text-align: center;
     padding-left: 100px;
+    
+}
+
+card.card-meal.id {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    padding-left: 60px;
 }
 
 #then {
@@ -79,7 +116,11 @@ p {
 
 
 ul, ol {
-    width: 500px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
 }
 
 img.meal-image {
@@ -87,7 +128,7 @@ img.meal-image {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-left: 100px;
+    padding-left: 50px;
 }
 
 h2 {
@@ -97,8 +138,9 @@ h2 {
     align-items: center;
 }
 
+
+
 div#card-holder {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
 }
