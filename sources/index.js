@@ -2,13 +2,6 @@ const el = (id) => document.getElementById(id);
 
 const API = "http://localhost:3000/veganMeals";
 
-// Meal ingredients and instructions (HTML uls & ols)
-const pancakes = [el("pancake-ingredients"), el("pancake-instructions")];
-const eggs = [el("egg-ingredients"), el("egg-instructions")];
-const chickn = [el("chick'n-ingredients"), el("chick'n-instructions")];
-const burger = [el("burger-ingredients"), el("burger-instructions")];
-const taco = [el("taco-ingredients"), el("taco-instructions")];
-const phork = [el("phork-ingredients"), el("phork-instructions")];
 // Function shortcut for "document.getElementById()"
 const selector = el("meal");
 // Header image(s) variables
@@ -56,7 +49,6 @@ fetch(API)
 
   // alerts with message when "submit" button clicked
   function selectMeal(mealCategoryName) {
-    console.log(mealCategoryName)
     switch (mealCategoryName) {
       case "breakfast":
         alert("You've selected Breakfast! Let's see what's cooking.");
