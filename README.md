@@ -40,3 +40,35 @@ If you are daring enough, you can:
 - A button labeled "Ingredients & Instructions" that, in a new 'tab', will open to the direct link for that specific meal recipe and cooking instructions
 
 In hopes of trying something new, enjoy a wonderful vegan alternative to a few "breakfast", "lunch" & "dinner" classics, on the house. 😋
+
+
+Image Sources :
+
+* Header Images 
+- https://viva.org.uk/tryvegan/
+- https://www.travelanddestinations.com/must-try-vegan-foods-middle-east/
+
+* Default "cardholder" image (Grass)
+- https://gallery.yopriceville.com/Free-Clipart-Pictures/Grass-Grounds-Coverings-PNG-Clipart/Fresh_Green_Grass_PNG_Clip_Art_Image
+
+* Vegan Meals 
+(Doubles as alt. recipe look up (Base URL) / Recipe & Instructions for specified meals (Full path))
+
+    Spelt Pancakes
+- https://www.thesimplegreen.com/fluffy-vegan-cinnamon-spelt-pancakes/
+
+    Chickpea Flour "Scrambled Eggs"
+- https://sweetsimplevegan.com/chickpea-scramble/
+
+    Oyster Mushroom "Fried Chick'n"
+- https://cookingwithayeh.com/fried-oyster-mushrooms-vegan-fried-chicken/
+
+    Black Bean Burger
+- https://www.allrecipes.com/recipe/222247/vegan-black-bean-burgers/
+
+    Vegan Taco Meat
+- https://www.vegkitchen.com/vegan-walnut-taco-meat/
+
+    Jackfruit "Pulled Pork"
+- https://lovingitvegan.com/jackfruit-pulled-pork/
+
