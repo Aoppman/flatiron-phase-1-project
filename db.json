@@ -22,7 +22,7 @@
             "type": "chick/'n",
             "name": "Oyster Mushroom Fried \"Chicken\"",
             "image": "/Users/dru_opp/Development/code/phase-1/flatiron-phase-1-project/sources/images/Fried-Oyster-Mushrooms-Vegan-Fried-Chicken-01.jpeg",
-            "srcLink": "https://cookingwithayeh.com" 
+            "srcLink": "https://cookingwithayeh.com"
         },
         {
             "id": 4,
@@ -30,7 +30,7 @@
             "type": "burger",
             "name": "Black Bean Burger",
             "image": "/Users/dru_opp/Development/code/phase-1/flatiron-phase-1-project/sources/images/black-bean-burger.jpeg",
-            "srcLink": "https://www.allrecipes.com" 
+            "srcLink": "https://www.allrecipes.com"
         },
         {
             "id": 5,
@@ -48,5 +48,7 @@
             "image": "/Users/dru_opp/Development/code/phase-1/flatiron-phase-1-project/sources/images/Jackfruit-Pulled-Pork-23.jpg",
             "srcLink": "https://lovingitvegan.com"
         }
-    ]
+
+        ]
+
 }
