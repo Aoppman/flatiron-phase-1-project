@@ -22,38 +22,6 @@ const form = el("click");
 //const hiddenElements = document.querySelectorAll('.hidden-element')
 
 
-
-
-// appends uls / ols to cards containing associated/matching
-// JSON data (nested in renderMeals())
-function appendInfo(meal, card) {
-  switch (meal.id) {
-    case 1:
-      return card.append(pancakes[0], pancakes[1]);
-      break;
-    case 2:
-      return card.append(eggs[0], eggs[1]);
-      break;
-    case 3:
-      return card.append(chickn[0], chickn[1]);
-      break;
-    case 4:
-      return card.append(burger[0], burger[1]);
-      break;
-    case 5:
-      return card.append(taco[0], taco[1]);
-      break;
-    case 6:
-      return card.append(phork[0], phork[1]);
-      break;
-    default:
-      return false;
-  }
-
- 
-
-}
-
 // Fetches JSON data and calls renderMeals() on returned data
 fetch(API)
   .then((resp) => resp.json())
@@ -135,16 +103,19 @@ function renderMealCard(meal) {
   const a = document.createElement("p");
   a.innerHTML = `<a class="link" href=${meal.srcLink}>${meal.srcLink}</a>`;
 
+  const ingredients = meal.ingredients
+
   const buttonElement = document.createElement("button");
   buttonElement.id = "my-button";
   buttonElement.classList.add("btn");
   buttonElement.textContent = "Ingredients & Instructions";
-  buttonElement.addEventListener('click', )
+  buttonElement.addEventListener('click', (meal) => {
+    window.open(ingredients, '_blank');
+  })
 
   // append to card
   card.append(h2, img, p, a, buttonElement);
 
   document.querySelector("#card-holder").appendChild(card);
   
-  appendInfo(meal, card);
 }
