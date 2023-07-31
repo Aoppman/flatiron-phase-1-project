@@ -72,3 +72,6 @@ Image Sources :
     Jackfruit "Pulled Pork"
 - https://lovingitvegan.com/jackfruit-pulled-pork/
 
+
+
+* A special thanks to the insight from the wonderful Flatiron School instructors, as well as Google for the continued help.

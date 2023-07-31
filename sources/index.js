@@ -19,8 +19,6 @@ const headerImg2 = el("mid-east-vegan");
 const selectedMeal = el("meal").value;
 const form = el("click");
 
-//const hiddenElements = document.querySelectorAll('.hidden-element')
-
 
 // Fetches JSON data and calls renderMeals() on returned data
 fetch(API)
@@ -34,7 +32,7 @@ fetch(API)
 // Form functionality
 // meal category drop down selection and verification method
 
-  
+// Submit event
   function renderAllMealCards(allMeals){
     form.addEventListener("submit", (e) => {
       e.preventDefault();
@@ -61,13 +59,13 @@ fetch(API)
     console.log(mealCategoryName)
     switch (mealCategoryName) {
       case "breakfast":
-        alert("You've selected Breakfast! Let's see what's cooking 👨‍🍳");
+        alert("You've selected Breakfast! Let's see what's cooking.");
         break;
       case "lunch":
-        alert("You've selected Lunch! Let's see what's cooking 👨‍🍳");
+        alert("You've selected Lunch! Let's see what's cooking.");
         break;
       case "dinner":
-        alert("You've selected Dinner! Let's see what's cooking 👨‍🍳");
+        alert("You've selected Dinner! Let's see what's cooking.");
         break;
       case "blank":
         alert("Please select a meal category!");
@@ -104,7 +102,8 @@ function renderMealCard(meal) {
   a.innerHTML = `<a class="link" href=${meal.srcLink}>${meal.srcLink}</a>`;
 
   const ingredients = meal.ingredients
-
+  // recipe and instructions redirect "button"
+  // click event
   const buttonElement = document.createElement("button");
   buttonElement.id = "my-button";
   buttonElement.classList.add("btn");
