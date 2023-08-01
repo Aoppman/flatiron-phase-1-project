@@ -12,14 +12,14 @@ const headerImg2 = el("mid-east-vegan");
 const selectedMeal = el("meal").value;
 const form = el("click");
 
-
+console.log("connected")
 // Fetches JSON data and calls renderMeals() on returned data
 fetch(API)
   .then((resp) => resp.json())
   .then((veganMeals) => {
     allMeals = veganMeals;
     renderAllMealCards(veganMeals)
-    document.querySelector("#card-holder").innerHTML = '<img id="grass" src="/Users/dru_opp/Development/code/phase-1/flatiron-phase-1-project/sources/images/Fresh_Green_Grass_PNG_Clip_Art_Image.png" alt="grass">';
+    document.querySelector("#card-holder").innerHTML = '<img id="grass" src="./sources/images/Fresh_Green_Grass_PNG_Clip_Art_Image.png" alt="grass">';
   });
 
 // Form functionality
@@ -40,9 +40,9 @@ fetch(API)
           selectMeal(mealCategoryName)
         } else if (mealCategoryName === "blank") {
           selectMeal(mealCategoryName);
-          document.querySelector("#card-holder").innerHTML = '<img id="grass" src="/Users/dru_opp/Development/code/phase-1/flatiron-phase-1-project/sources/images/Fresh_Green_Grass_PNG_Clip_Art_Image.png" alt="grass">';
+          document.querySelector("#card-holder").innerHTML = '<img id="grass" src="./sources/images/Fresh_Green_Grass_PNG_Clip_Art_Image.png" alt="grass">';
     } else {
-      document.querySelector("#card-holder").innerHTML = '<img id="grass" src="/Users/dru_opp/Development/code/phase-1/flatiron-phase-1-project/sources/images/Fresh_Green_Grass_PNG_Clip_Art_Image.png" alt="grass">';
+      document.querySelector("#card-holder").innerHTML = '<img id="grass" src="./sources/images/Fresh_Green_Grass_PNG_Clip_Art_Image.png" alt="grass">';
     }
   })
   }
